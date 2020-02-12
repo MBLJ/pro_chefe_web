@@ -1,0 +1,17 @@
+.caixa-login{
+    width: 400px;
+    height: 400px;
+    margin-top: 285px;
+    margin-left: 670px;
+    border: 2px gray solid;
+    border-radius: 2px;     
+    text-align: center;
+}
+.home{
+    margin-top: 10px;
+    text-align: center;
+}
+.infos{
+    text-align: left;
+    
+}

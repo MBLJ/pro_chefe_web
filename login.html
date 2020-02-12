@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Julubom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="caixa-login">
+        <h2>Bem-Vindo</h2>
+        <input type="text" placeholder="Usuário" id="placeholderUsuario"><br><br>
+        <input type="password" placeholder="Senha" id="placeholderSenha"><br><br>
+        <h>Esqueceu sua senha</h><br><br>
+        <button type="button" id="btnEntrar" onclick="entrar()">Entrar</button>
+    </div>
+
+    <script>
+
+        function entrar() {
+            var x = document.getElementById("placeholderUsuario");
+            var y = document.getElementById("placeholderSenha");
+            if (x.value == "vinicius" && y.value == "123") {
+
+                document.getElementById("btnEntrar").onclick = function () {
+                    location.href = "home.html"
+                }
+            }
+            else {
+                return alert("acesso negado"); s
+            }
+        }
+
+    </script>
+</body>
+
+</html>
