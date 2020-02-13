@@ -13,12 +13,16 @@
         <h2>Bem-Vindo</h2>
         <input type="text" placeholder="Usuário" id="placeholderUsuario"><br><br>
         <input type="password" placeholder="Senha" id="placeholderSenha"><br><br>
-        <h>Esqueceu sua senha</h><br><br>
+        <button class="link" type="button" id="btnEsqueceuSenha" onclick="esqueceuSenha()">Esqueceu sua Senha</button><br><br>
         <button type="button" id="btnEntrar" onclick="entrar()">Entrar</button>
     </div>
 
     <script>
-
+        function esqueceuSenha(){
+            document.getElementById("btnEsqueceuSenha").onclick = function(){
+                location.href = "esqueceuSenha.html"
+            }
+        }
         function entrar() {
             var x = document.getElementById("placeholderUsuario");
             var y = document.getElementById("placeholderSenha");
@@ -34,6 +38,7 @@
         }
 
     </script>
+
 </body>
 
 </html>
